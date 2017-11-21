@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    tools:context="com.example.david.examenprog.DadesPersonalsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/datosPersonales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Datos Personales"
+        android:textSize="30sp"
+        android:layout_marginStart="118dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/NombreApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/datosPersonales"
+        android:layout_below="@+id/datosPersonales"
+        android:layout_marginTop="21dp"
+        android:text="Nombre y Apellidos"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etNombreApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/NombreApellidos"
+        android:layout_below="@+id/NombreApellidos"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/Edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etNombreApellidos"
+        android:layout_below="@+id/etNombreApellidos"
+        android:layout_marginTop="13dp"
+        android:text="Edad"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Edad"
+        android:layout_below="@+id/Edad"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/Sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etEdad"
+        android:layout_below="@+id/etEdad"
+        android:layout_marginTop="12dp"
+        android:text="Sexo"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Sexo"
+        android:layout_below="@+id/Sexo"
+        android:text="Hombre" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radioButton"
+        android:layout_below="@+id/radioButton"
+        android:text="Mujer" />
+
+    <Button
+        android:id="@+id/botonGuardarDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar Datos"
+        android:layout_marginStart="40dp"
+        android:layout_alignTop="@+id/radioButton"
+        android:layout_toEndOf="@+id/NombreApellidos" />
+</RelativeLayout>

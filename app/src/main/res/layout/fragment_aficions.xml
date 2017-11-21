@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.examenprog.AficionsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/aficiones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="Aficiones"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/lecturas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aficiones"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_toStartOf="@+id/aficiones"
+        android:text="Lecturas"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/radioButtonLibros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lecturas"
+        android:layout_below="@+id/lecturas"
+        android:layout_marginTop="13dp"
+        android:text="Libros" />
+
+    <RadioButton
+        android:id="@+id/radioButtonRevistas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioButtonLibros"
+        android:layout_toEndOf="@+id/lecturas"
+        android:text="Revistas" />
+
+    <RadioButton
+        android:id="@+id/radioButtonRedes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioButtonRevistas"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/radioButtonRevistas"
+        android:text="Redes Sociales" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radioButtonLibros"
+        android:layout_below="@+id/radioButtonLibros"
+        android:layout_marginTop="22dp"
+        android:text="Puntuacion"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/botonGuardarDatos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Guardar Datos"
+        android:layout_below="@+id/ratingBar"
+        android:layout_toEndOf="@+id/radioButtonRevistas" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:numStars="5"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

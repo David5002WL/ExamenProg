@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.examenprog.FragmentBotones">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+        android:id="@+id/botonDatos"
+        android:layout_width="175dp"
+        android:layout_height="110dp"
+        android:text="Datos Personales" />
+
+    <Button
+        android:id="@+id/botonAficiones"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:text="Aficiones"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/botonDatos"
+        android:layout_alignBottom="@+id/botonDatos" />
+
+    <Button
+        android:id="@+id/botonInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informacion"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/botonAficiones"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
